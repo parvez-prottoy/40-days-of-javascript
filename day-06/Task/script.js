@@ -27,3 +27,24 @@ function findMax(num1, num2) {
 }
 
 console.log(findMax(-10, -9));
+
+/* 
+
+## 3. Function to Check if a String is a Palindrome
+Create a function isPalindrome(str) that checks if a given string is a palindrome (reads the same forward and backward). You can not use any string function that we have not learned in the series so far.
+
+*/
+
+function isPalindrome(str) {
+  let reversedStr = "";
+  for (let i = str.length - 1; i >= 0; i--) {
+    reversedStr += str[i];
+  }
+  if (str === reversedStr) {
+    return "The string is a palindrome";
+  } else {
+    return "The string is not a palindrome";
+  }
+}
+console.log(isPalindrome("madam"));
+console.log(isPalindrome("hello"));
